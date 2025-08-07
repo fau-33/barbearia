@@ -109,3 +109,27 @@ body {
   height: auto;
   margin-top: 2rem;
 }
+
+/* Contato */
+.contact-section {
+  background-color: #808080; /* Cinza claro */
+  padding: 3rem 0;
+  text-align: center;
+  color: #ffffff; /* Texto branco */
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  color: #ffffff; /* Texto branco */
+}
