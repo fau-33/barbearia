@@ -133,3 +133,11 @@ body {
   margin: 0.5rem 0;
   color: #ffffff; /* Texto branco */
 }
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
