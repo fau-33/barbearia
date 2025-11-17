@@ -3,65 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Barber Shop" />
-    <title>Barber Shop</title>
+    <meta name="description" content="Barbearia Classic - cortes e cuidados" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barbearia Classic</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- Topo -->
     <header class="header">
       <div class="logo-container">
-        <img src="./img/logo.jpg" alt="Logo da Barbear Shop" class="logo" />
+        <img
+          src="./img/logo.jpg"
+          alt="Logo da Barbearia Classic"
+          class="logo"
+        />
+        <span>Barbearia Classic</span>
       </div>
       <nav class="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Serviços</a></li>
+          <li><a href="#gallery">Portfólio</a></li>
           <li><a href="#about">Sobre Nós</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#contact" class="btn-link">Agendar</a></li>
         </ul>
       </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
     <!-- Área Principal -->
     <section id="home" class="hero-section">
-      <div class="hero-content">
-        <h1>Bem-Vindo à Barbearia Classic</h1>
-        <p>O melhor corte e barba da cidade!</p>
-        <img src="./img/banner-barbearia.jpg" alt="Banner da Barbearia" />
+      <div class="hero-content container">
+        <p class="hero-tag">Desde 2020</p>
+        <h1>Estilo clássico com técnica moderna</h1>
+        <p>
+          Cortes autorais, barbas alinhadas e tratamentos completos em um
+          ambiente exclusivo e acolhedor.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn primary">Agendar horário</a>
+          <a href="#services" class="btn ghost">Conhecer serviços</a>
+        </div>
       </div>
+      <div class="hero-overlay"></div>
     </section>
 
     <!-- Serviços -->
-    <section id="services" class="services-section">
-      <h2>Serviços</h2>
-      <p>Oferecemos uma variedade de serviços para deixar você impecável.</p>
-      <ul>
-        <li>Corte Clássico</li>
-        <li>Barba Perfeita</li>
-        <li>Tratamento Capilar</li>
-        <li>Design de Cabelo</li>
-      </ul>
+    <section id="services" class="services-section container">
+      <div class="section-heading">
+        <p class="section-tag">Nossos serviços</p>
+        <h2>Experiências completas para o seu visual</h2>
+        <p>
+          Técnicas atualizadas, produtos premium e profissionais especializados
+          em barbearia clássica e contemporânea.
+        </p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Corte Signature</h3>
+          <p>
+            Consultoria de estilo, lavagem aromática e finalização com produtos
+            importados.
+          </p>
+          <span>A partir de R$ 89</span>
+        </article>
+        <article class="service-card">
+          <h3>Barba Old School</h3>
+          <p>
+            Toalha quente, navalha precisa e cronograma de óleos para acabamento
+            impecável.
+          </p>
+          <span>A partir de R$ 69</span>
+        </article>
+        <article class="service-card">
+          <h3>Tratamento Capilar</h3>
+          <p>
+            Terapia revitalizante com esfoliação, hidratação profunda e massagem
+            relaxante.
+          </p>
+          <span>A partir de R$ 120</span>
+        </article>
+        <article class="service-card">
+          <h3>Design Personalizado</h3>
+          <p>
+            Linhas e degradês precisos, com foco em harmonizar o corte ao
+            formato do rosto.
+          </p>
+          <span>A partir de R$ 99</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <div class="section-heading container">
+        <p class="section-tag">Portfólio</p>
+        <h2>Detalhes que mostram nosso cuidado</h2>
+        <p>Imagens reais que refletem o clima da Barbearia Classic.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/3992862/pexels-photo-3992862.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Cliente recebendo corte de cabelo profissional"
+          />
+          <figcaption>Cortes clássicos e precisos</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Profissional alinhando barba com navalha"
+          />
+          <figcaption>Barbas alinhadas com técnica</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/3998401/pexels-photo-3998401.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Cliente relaxando durante tratamento capilar"
+          />
+          <figcaption>Tratamentos relaxantes</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- Sobre Nós -->
-    <section id="about" class="about-section">
-      <h2>Sobre Nós</h2>
-      <p>
-        A Barbearia Classic foi fundada em 2020 com o objetivo de oferecer um
-        serviço de qualidade e conforto aos nossos clientes. Nosso time de
-        profissionais qualificados está sempre pronto para proporcionar uma
-        experiência única.
-      </p>
-      <img src="./img/sobre-nos-barbearia.jpeg" alt="Equipe da Barbearia" />
+    <section id="about" class="about-section container">
+      <div class="about-content">
+        <div class="about-text">
+          <p class="section-tag">Sobre nós</p>
+          <h2>Tradição, técnica e hospitalidade</h2>
+          <p>
+            Fundada em 2020, a Barbearia Classic nasceu do desejo de oferecer um
+            espaço sofisticado, acolhedor e focado em experiências
+            personalizadas.
+          </p>
+          <p>
+            Nossa equipe combina formação internacional, atualização constante e
+            atendimento próximo ao cliente. Cada visita inclui diagnóstico
+            completo e recomendações de cuidados para o dia a dia.
+          </p>
+          <ul>
+            <li>Equipe certificada e especialistas em visagismo</li>
+            <li>Produtos importados e veganos</li>
+            <li>Ambiente climatizado com café e whisky de cortesia</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.pexels.com/photos/3998422/pexels-photo-3998422.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Equipe de barbeiros em atendimento"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- Contato -->
     <section id="contact" class="contact-section">
-      <h2>Contato</h2>
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="section-tag">Contato</p>
+          <h2>Agende sua experiência</h2>
+          <p>
+            Segunda a sábado, das 10h às 21h. Estacionamento conveniado e locker
+            para pertences.
+          </p>
+          <ul>
+            <li>
+              <strong>Endereço:</strong> Rua Exemplo, 123 - Centro, São Paulo
+            </li>
+            <li><strong>Telefone:</strong> (11) 1234-5678</li>
+            <li><strong>WhatsApp:</strong> (11) 91234-5678</li>
+            <li><strong>Email:</strong> contato@barbeariaclassic.com</li>
+          </ul>
+          <div class="contact-actions">
+            <a
+              href="https://wa.me/5511912345678"
+              target="_blank"
+              class="btn primary"
+              >Chamar no WhatsApp</a
+            >
+            <a href="tel:+551112345678" class="btn ghost">Ligar agora</a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <label>
+            Nome
+            <input type="text" placeholder="Seu nome" required />
+          </label>
+          <label>
+            Telefone
+            <input type="tel" placeholder="(11) 99999-9999" required />
+          </label>
+          <label>
+            Serviço de interesse
+            <select required>
+              <option value="">Selecione</option>
+              <option value="corte">Corte Signature</option>
+              <option value="barba">Barba Old School</option>
+              <option value="tratamento">Tratamento Capilar</option>
+              <option value="design">Design Personalizado</option>
+            </select>
+          </label>
+          <label>
+            Melhor horário
+            <input type="text" placeholder="Ex.: 14h - 18h" />
+          </label>
+          <button type="submit" class="btn primary">Enviar pedido</button>
+        </form>
+      </div>
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.867898888889!2d-46.63587988535157!3d-23.55052168472222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b207fc2c7%3A0x84fdfc0242936ee9!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1684032000000!5m2!1spt-BR!2sbr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.923373064185!2d-46.65598112555024!3d-23.571551562370444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce599be7124965%3A0xc46f31553378eaef!2sAv.%20Paulista%2C%201571%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001313-902!5e0!3m2!1spt-BR!2sbr!4v1727696500000!5m2!1spt-BR!2sbr"
           width="600"
           height="450"
           style="border: 0"
@@ -70,16 +230,17 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="contact-info">
-        <p>Endereço: Rua Exemplo, 123 - Bairro, Cidade</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Email: contato@barbeariashop.com</p>
-      </div>
     </section>
 
     <!-- Rodapé -->
     <footer class="footer">
-      <p>&copy; 2025 Barbearia Shop. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Barbearia Classic. Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido por
+        <span class="author-highlight">Flávio Félix</span>.
+      </p>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
